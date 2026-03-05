@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="py-24 md:py-36" style={{ borderTop: '1px solid #2A2A2A' }}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-0">
 
           {/* Label */}
           <div className="md:col-span-2">

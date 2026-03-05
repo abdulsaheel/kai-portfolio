@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-end pb-20 md:pb-28"
-      style={{ paddingTop: '120px' }}
+      className="min-h-screen flex flex-col justify-center"
+      style={{ paddingTop: '80px' }}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full">
 
@@ -61,7 +61,7 @@ export default function Hero() {
             color: '#F2F2F2',
             opacity: 0.65,
             lineHeight: 1.75,
-            maxWidth: '540px',
+            maxWidth: '560px',
           }}
         >
           Kai is a frontend developer at Vanguards Studio.
