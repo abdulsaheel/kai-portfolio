@@ -1,5 +1,5 @@
 const links = [
-  { label: 'hello@vanguards.studio', href: 'mailto:hello@vanguards.studio' },
+  { label: 'hello@kai.dev', href: 'mailto:hello@kai.dev' },
   { label: 'GitHub', href: 'https://github.com/abdulsaheel' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/abdulsaheel' },
 ]
@@ -32,18 +32,16 @@ export default function Contact() {
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontWeight: 300,
-                fontSize: 'clamp(1rem, 1.8vw, 1.2rem)',
+                fontSize: 'clamp(1.1rem, 2.2vw, 1.4rem)',
                 color: '#F2F2F2',
-                opacity: 0.75,
-                lineHeight: 1.8,
+                opacity: 0.7,
+                lineHeight: 1.7,
               }}
             >
-              If the work is interesting, get in touch.
-              <br />
-              If it isn't, don't.
+              See the work. Judge the code.
             </p>
 
-            <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
+            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               {links.map((l, i) => (
                 <a
                   key={i}
@@ -53,10 +51,10 @@ export default function Contact() {
                   style={{
                     fontFamily: "'IBM Plex Mono', monospace",
                     fontSize: '0.8rem',
-                    letterSpacing: '0.05em',
+                    letterSpacing: '0.06em',
                     color: '#F2F2F2',
                     textDecoration: 'none',
-                    opacity: 0.55,
+                    opacity: 0.5,
                     transition: 'opacity 0.15s ease, color 0.15s ease',
                   }}
                   onMouseEnter={(e) => {
@@ -64,7 +62,7 @@ export default function Contact() {
                     e.currentTarget.style.color = '#C8FF00'
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.opacity = '0.55'
+                    e.currentTarget.style.opacity = '0.5'
                     e.currentTarget.style.color = '#F2F2F2'
                   }}
                 >

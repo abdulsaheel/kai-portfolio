@@ -1,3 +1,8 @@
+const stack = [
+  'REACT', 'NEXT.JS', 'TYPESCRIPT', 'TAILWIND',
+  'FRAMER MOTION', 'VITE', 'VERCEL', 'GIT',
+]
+
 export default function Hero() {
   return (
     <section
@@ -37,35 +42,58 @@ export default function Hero() {
             fontWeight: 500,
             letterSpacing: '-0.01em',
             lineHeight: 1.05,
-            fontSize: 'clamp(2.8rem, 8vw, 7rem)',
+            fontSize: 'clamp(2.2rem, 6.5vw, 6rem)',
             color: '#F2F2F2',
           }}
         >
-          <div>FRONTEND DEVELOPER</div>
-          <div style={{ color: '#F2F2F2', opacity: 0.35 }}>BASED IN INDIA</div>
+          FRONTEND. FAST. CLEAN. DONE.
         </div>
 
         {/* Divider */}
-        <div
-          style={{ borderTop: '1px solid #2A2A2A', marginTop: '3rem', marginBottom: '2rem' }}
-        />
+        <div style={{ borderTop: '1px solid #2A2A2A', marginTop: '3rem', marginBottom: '2rem' }} />
 
         {/* Subtext */}
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 300,
-            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
+            fontSize: 'clamp(1rem, 2vw, 1.25rem)',
             color: '#F2F2F2',
-            opacity: 0.7,
-            lineHeight: 1.6,
-            maxWidth: '520px',
+            opacity: 0.65,
+            lineHeight: 1.75,
+            maxWidth: '540px',
           }}
         >
-          Kai builds what needs to be built.
+          Kai is a frontend developer at Vanguards Studio.
+          He takes a design brief and ships it.
+          No over-engineering. No missed deadlines.
           <br />
-          Fast, clean, and without excuses.
+          Performs at 375px. Scales up from there.
         </p>
+
+        {/* Stack ticker */}
+        <div
+          className="mt-12 flex flex-wrap gap-x-5 gap-y-2 items-center"
+          style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+        >
+          {stack.map((s, i) => (
+            <span key={s} className="flex items-center gap-5">
+              <span
+                style={{
+                  fontSize: '0.65rem',
+                  letterSpacing: '0.12em',
+                  color: '#F2F2F2',
+                  opacity: 0.3,
+                }}
+              >
+                {s}
+              </span>
+              {i < stack.length - 1 && (
+                <span style={{ color: '#2A2A2A', fontSize: '0.65rem' }}>·</span>
+              )}
+            </span>
+          ))}
+        </div>
 
       </div>
     </section>
